@@ -50,11 +50,6 @@ if ( errCode3 < 0 )
     error('ERROR: TG_Connect() returned %d.\n', errCode3);
 end
 
-%blink(connectionId1);
-%attention(connectionId1);
-%poor_connection(connectionId1);
-%meditation(connectionId1);
-
 while(errCode3 == 0)
     check_poor_connection(connectionId1)
 end
