@@ -98,7 +98,7 @@ calllib('thinkgear64', 'TG_FreeConnection', connectionId1 );
      if(blink(connectionId1,1)==1)
         if(attention(connectionId1) > 50)
             disp('FORWARD');
-            BSCW(1, 0, 1, 0);
+            BSCW(1, 0, 0, 1);
             if(poor_connection(connectionId1, 100)==1)
                 disp("STOP");
                 BSCW(0, 0, 0, 0);
@@ -108,7 +108,7 @@ calllib('thinkgear64', 'TG_FreeConnection', connectionId1 );
      else
         if(attention(connectionId1) > 50)
             disp("BACKWARD");
-            BSCW(0, 1, 0, 1);
+            BSCW(0, 1, 1, 0);
             if(poor_connection(connectionId1, 100)==1)
                 disp("STOP");
                 BSCW(0, 0, 0, 0);
@@ -123,7 +123,7 @@ calllib('thinkgear64', 'TG_FreeConnection', connectionId1 );
     if(blink(connectionId1,1)==1)
         if(attention(connectionId1) > 50)
             disp("RIGHT");
-            BSCW(0, 0, 1, 0);
+            BSCW(0, 0, 0, 1);
             if(poor_connection(connectionId1, 100)==1)
                 disp("STOP");
                 BSCW(0, 0, 0, 0);
